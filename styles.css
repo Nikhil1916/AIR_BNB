@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .favourites {
@@ -10,10 +11,13 @@
     padding: 20px;
     color: black;
 
-    a, a:visited, a:hover {
+    a,
+    a:visited,
+    a:hover {
         color: black;
         font-size: 18px;
     }
+
     /* margin-bottom: 12px; */
 }
 
@@ -24,6 +28,7 @@
 nav {
     border-bottom: 1px solid lightgray;
     padding-bottom: 25px;
+
     .topNav {
         display: flex;
         justify-content: space-between;
@@ -31,9 +36,11 @@ nav {
         align-items: center;
         font-size: 1.2rem;
         font-weight: 600;
-        > div {
+
+        >div {
             flex-basis: 33.33vw;
         }
+
         .logo {
             display: flex;
             align-items: center;
@@ -52,7 +59,7 @@ nav {
             span {
                 padding: 1rem;
             }
-            
+
             span:hover {
                 border: 1px solid lightgray;
                 border-radius: 20px;
@@ -68,14 +75,17 @@ nav {
             justify-content: flex-end;
             box-sizing: border-box;
             align-items: center;
+
             div {
                 padding: 0.5rem;
             }
+
             div:hover {
                 border: 1px solid lightgray;
                 border-radius: 20px;
                 background-color: rgb(247, 247, 247);
                 font-weight: bold;
+
                 svg {
                     font-weight: bold;
                 }
@@ -86,33 +96,83 @@ nav {
     .nav-searchbar {
         justify-content: center;
         align-items: center;
+
         .search-div {
             display: flex;
             justify-content: space-between;
             gap: 50px;
             border: 1px solid lightgray;
             align-items: center;
-            border-radius: 20px;
-            padding: 10px;
-            > div {
+            border-radius: 30px;
+            padding: 5px;
+
+            
+            >div:not(.svg-search) {
                 border: 1px solid transparent;
+                border-radius: 20px;
+                padding: 10px;
+                /* flex-basis: 20%; */
+                &:first-child {
+                    margin-left: 10px;
+                }
+
                 p {
                     font-weight: 600;
                 }
+
                 span {
                     color: rgb(116, 106, 106);
                     font-size: 14px;
                 }
 
+                &:hover {
+                    background-color: rgb(247, 247, 247);
+                }
             }
+
+            >div {
+                
+                &:last-child {
+                    margin-right: 10px;
+                }
+            }
+
             .svg-search {
                 background-color: red;
                 padding: 12px;
                 border-radius: 50%;
+                width: 40px;
+                height: 40px;
             }
+
             hr {
                 height: 30px;
             }
         }
+    }
+}
+
+main {
+    margin-top: 20px;
+
+    .filter {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .icons-help {
+            display: flex;
+            &:first-child {
+                margin-left: 30px;
+            }
+        }
+    }
+
+    .filter-icon {
+        border: 1px solid lightgray;
+        padding: 15px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
     }
 }
