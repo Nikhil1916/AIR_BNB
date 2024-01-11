@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.favourites {
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+    padding: 20px;
+    color: black;
+
+    a, a:visited, a:hover {
+        color: black;
+        font-size: 18px;
+    }
+    /* margin-bottom: 12px; */
+}
+
+.flex {
+    display: flex;
+}
+
+nav {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 25px;
+    .topNav {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+        > div {
+            flex-basis: 33.33vw;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            img {
+                border-radius: 20px;
+            }
+        }
+
+        .nav-options {
+            display: flex;
+            gap: 15px;
+            align-content: center;
+
+            span {
+                padding: 1rem;
+            }
+            
+            span:hover {
+                border: 1px solid lightgray;
+                border-radius: 20px;
+                background-color: rgb(247, 247, 247);
+                font-weight: bold;
+            }
+        }
+
+        .nav-profile {
+            display: flex;
+            gap: 20px;
+            margin-right: 20px;
+            justify-content: flex-end;
+            box-sizing: border-box;
+            align-items: center;
+            div {
+                padding: 0.5rem;
+            }
+            div:hover {
+                border: 1px solid lightgray;
+                border-radius: 20px;
+                background-color: rgb(247, 247, 247);
+                font-weight: bold;
+                svg {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .nav-searchbar {
+        justify-content: center;
+        align-items: center;
+        .search-div {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            border: 1px solid lightgray;
+            align-items: center;
+            border-radius: 20px;
+            padding: 10px;
+            > div {
+                border: 1px solid transparent;
+                p {
+                    font-weight: 600;
+                }
+                span {
+                    color: rgb(116, 106, 106);
+                    font-size: 14px;
+                }
+
+            }
+            .svg-search {
+                background-color: red;
+                padding: 12px;
+                border-radius: 50%;
+            }
+            hr {
+                height: 30px;
+            }
+        }
+    }
+}
