@@ -22,8 +22,6 @@ body {
         color: black;
         font-size: 18px;
     }
-
-    /* margin-bottom: 12px; */
 }
 
 .flex {
@@ -189,7 +187,6 @@ main {
         justify-content: space-around;
         gap: 25px;
         .product {
-            /* flex-basis: 30%; */
             .image {
                 border-radius: 20px;
                 img {
